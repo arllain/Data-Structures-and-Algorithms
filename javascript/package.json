@@ -5,5 +5,6 @@
   "main": "index.js",
   "repository": "https://github.com/arllain/Data-Structures-and-Algorithms",
   "author": "arllain",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
