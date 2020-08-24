@@ -1,0 +1,9 @@
+{
+  "name": "Data-Structures-and-Algorithms",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms in JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/arllain/Data-Structures-and-Algorithms",
+  "author": "arllain",
+  "license": "MIT"
+}
