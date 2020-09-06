@@ -1,9 +1,6 @@
-import MyArray from "./data_structures/arrays/MyArray.js";
-import ReverseString from "./algorithms/ReverseString.js";
-
-const reverseString = new ReverseString();
-const result = reverseString.reverse("This is a reversed string");
-console.log(result.join(""));
+// import MyArray from "./data_structures/Array/MyArray.js";
+// import ReverseString from "./algorithms/ReverseString.js";
+import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -14,3 +11,16 @@ console.log(result.join(""));
 // myArray.push("nice");
 // myArray.delete(1);
 // console.log(myArray);
+
+// const reverseString = new ReverseString();
+// const result = reverseString.reverse("This is a reversed string");
+// console.log(result.join(""));
+
+const myHashTable = new MyHashTable(50);
+myHashTable.set("grapes", 1000);
+myHashTable.set("apples", 54);
+myHashTable.set("oranges", 10);
+// console.log(myHashTable.get("grapes"));
+// console.log(myHashTable.get("apples"));
+// console.log(myHashTable.get("oranges"));
+console.log(myHashTable.keys());
