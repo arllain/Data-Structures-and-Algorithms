@@ -1,6 +1,7 @@
 // import MyArray from "./data_structures/Array/MyArray.js";
 // import ReverseString from "./algorithms/ReverseString.js";
-import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
+//import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
+import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -16,11 +17,17 @@ import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
 // const result = reverseString.reverse("This is a reversed string");
 // console.log(result.join(""));
 
-const myHashTable = new MyHashTable(50);
-myHashTable.set("grapes", 1000);
-myHashTable.set("apples", 54);
-myHashTable.set("oranges", 10);
+// const myHashTable = new MyHashTable(50);
+// myHashTable.set("grapes", 1000);
+// myHashTable.set("apples", 54);
+// myHashTable.set("oranges", 10);
 // console.log(myHashTable.get("grapes"));
 // console.log(myHashTable.get("apples"));
 // console.log(myHashTable.get("oranges"));
-console.log(myHashTable.keys());
+
+const firstRecurringCharacter = new FirstRecurringCharacter();
+const array = [2, 5, 5, 2, 3, 5, 1, 2, 4];
+//It should return undefined
+
+console.log(firstRecurringCharacter.firstRecurringCharacter_worstCase(array));
+console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
