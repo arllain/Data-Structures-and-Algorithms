@@ -1,7 +1,8 @@
 // import MyArray from "./data_structures/Array/MyArray.js";
 // import ReverseString from "./algorithms/ReverseString.js";
 //import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
-import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
+//import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
+import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -25,9 +26,10 @@ import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
 // console.log(myHashTable.get("apples"));
 // console.log(myHashTable.get("oranges"));
 
-const firstRecurringCharacter = new FirstRecurringCharacter();
-const array = [2, 5, 5, 2, 3, 5, 1, 2, 4];
-//It should return undefined
+// const firstRecurringCharacter = new FirstRecurringCharacter();
+// const array = [2, 5, 5, 2, 3, 5, 1, 2, 4];
+// console.log(firstRecurringCharacter.firstRecurringCharacter_worstCase(array));
+// console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
 
-console.log(firstRecurringCharacter.firstRecurringCharacter_worstCase(array));
-console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
+const myLinkedList = new MySinglyLinkedList(10);
+console.log(myLinkedList);
