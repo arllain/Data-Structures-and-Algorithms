@@ -15,6 +15,15 @@ class MySinglyLinkedList {
     this.length++;
     return this;
   }
+
+  // Adding a new node to the beginnig of the list
+  prepend(value) {
+    const node = new Node(value);
+    node.next = this.head;
+    this.head = node;
+    this.length++;
+    return this;
+  }
 }
 
 export default MySinglyLinkedList;
