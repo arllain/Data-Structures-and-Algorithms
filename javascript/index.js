@@ -32,4 +32,8 @@ import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLin
 // console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
 
 const myLinkedList = new MySinglyLinkedList(10);
+//console.log(myLinkedList);
+myLinkedList.append(5);
+//console.log(myLinkedList);
+myLinkedList.append(16);
 console.log(myLinkedList);
