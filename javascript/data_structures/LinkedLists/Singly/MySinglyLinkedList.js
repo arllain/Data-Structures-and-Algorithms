@@ -24,6 +24,17 @@ class MySinglyLinkedList {
     this.length++;
     return this;
   }
+
+  // Printing the linkedList
+  printList() {
+    const list = [];
+    let currentNode = this.head;
+    while (currentNode != null) {
+      list.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    console.log(list.join(" => "));
+  }
 }
 
 export default MySinglyLinkedList;
