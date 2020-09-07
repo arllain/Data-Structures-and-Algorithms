@@ -2,8 +2,10 @@
 // import ReverseString from "./algorithms/ReverseString.js";
 //import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
 //import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
-import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
+//import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
 //import MyDoublyLinkedList from "./data_structures/LinkedLists/doubly/MyDoublyLinkedList.js";
+//import Stack_LinkedList from "./data_structures/Stack/using_linked_list/Stack.js";
+import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -32,15 +34,15 @@ import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLin
 // console.log(firstRecurringCharacter.firstRecurringCharacter_worstCase(array));
 // console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
 
-const myLinkedList = new MySinglyLinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(20, 88);
-myLinkedList.remove(4);
-myLinkedList.remove(2);
-myLinkedList.reverse();
+// const myLinkedList = new MySinglyLinkedList(10);
+// myLinkedList.append(5);
+// myLinkedList.append(16);
+// myLinkedList.prepend(1);
+// myLinkedList.insert(2, 99);
+// myLinkedList.insert(20, 88);
+// myLinkedList.remove(4);
+// myLinkedList.remove(2);
+// myLinkedList.reverse();
 
 // const myDoublyLinkedList = new MyDoublyLinkedList(10);
 // myDoublyLinkedList.append(5);
@@ -50,3 +52,20 @@ myLinkedList.reverse();
 // myDoublyLinkedList.insert(20, 88);
 // myDoublyLinkedList.remove(4);
 // myDoublyLinkedList.remove(2);
+
+// const stack_LinkedList = new Stack_LinkedList();
+// stack_LinkedList.push("google");
+// stack_LinkedList.push("udemy");
+// stack_LinkedList.push("discord");
+// stack_LinkedList.peek();
+// console.log(stack_LinkedList.pop());
+// console.log(stack_LinkedList.pop());
+// console.log(stack_LinkedList.pop());
+// console.log(stack_LinkedList.peek());
+
+const stack_array = new Stack_Array();
+stack_array.push("google");
+stack_array.push("udemy");
+stack_array.push("discord");
+console.log(stack_array);
+console.log(stack_array.pop());
