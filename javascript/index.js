@@ -2,7 +2,8 @@
 // import ReverseString from "./algorithms/ReverseString.js";
 //import MyHashTable from "./data_structures/HashTable/MyHashTable.js";
 //import FirstRecurringCharacter from "./algorithms/FirstRecurringCharacter.js";
-import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
+//import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
+import MyDoublyLinkedList from "./data_structures/LinkedLists/doubly/MyDoublyLinkedList.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -31,11 +32,20 @@ import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLin
 // console.log(firstRecurringCharacter.firstRecurringCharacter_worstCase(array));
 // console.log(firstRecurringCharacter.firstRecurringCharacter_bestCase(array));
 
-const myLinkedList = new MySinglyLinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(20, 88);
-myLinkedList.remove(4);
-myLinkedList.remove(2);
+// const myLinkedList = new MySinglyLinkedList(10);
+// myLinkedList.append(5);
+// myLinkedList.append(16);
+// myLinkedList.prepend(1);
+// myLinkedList.insert(2, 99);
+// myLinkedList.insert(20, 88);
+// myLinkedList.remove(4);
+// myLinkedList.remove(2);
+
+const myDoublyLinkedList = new MyDoublyLinkedList(10);
+myDoublyLinkedList.append(5);
+myDoublyLinkedList.append(16);
+myDoublyLinkedList.prepend(1);
+myDoublyLinkedList.insert(1, 99);
+myDoublyLinkedList.insert(20, 88);
+myDoublyLinkedList.remove(4);
+myDoublyLinkedList.remove(2);
