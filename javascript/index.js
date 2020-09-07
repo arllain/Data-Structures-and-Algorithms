@@ -49,3 +49,4 @@ myDoublyLinkedList.insert(1, 99);
 myDoublyLinkedList.insert(20, 88);
 myDoublyLinkedList.remove(4);
 myDoublyLinkedList.remove(2);
+myDoublyLinkedList.reverse();
