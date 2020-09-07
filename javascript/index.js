@@ -5,7 +5,9 @@
 //import MySinglyLinkedList from "./data_structures/LinkedLists/Singly/MySinglyLinkedList.js";
 //import MyDoublyLinkedList from "./data_structures/LinkedLists/doubly/MyDoublyLinkedList.js";
 //import Stack_LinkedList from "./data_structures/Stack/using_linked_list/Stack.js";
-import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
+//import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
+//import Queue_LinkedList from "./data_structures/Queue/using_linkedlist/Queue.js";
+import Queue_Stack from "./data_structures/Queue/using_stack/Queue.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -63,9 +65,31 @@ import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
 // console.log(stack_LinkedList.pop());
 // console.log(stack_LinkedList.peek());
 
-const stack_array = new Stack_Array();
-stack_array.push("google");
-stack_array.push("udemy");
-stack_array.push("discord");
-console.log(stack_array);
-console.log(stack_array.pop());
+// const stack_array = new Stack_Array();
+// stack_array.push("google");
+// stack_array.push("udemy");
+// stack_array.push("discord");
+// console.log(stack_array);
+// console.log(stack_array.pop());
+
+// const queue_LinkedList = new Queue_LinkedList();
+// console.log(queue_LinkedList.peek());
+// console.log(queue_LinkedList.enqueue("Joy"));
+// console.log(queue_LinkedList.enqueue("Matt"));
+// console.log(queue_LinkedList.enqueue("Pavel"));
+// console.log(queue_LinkedList.enqueue("Samir"));
+// console.log(queue_LinkedList.dequeue());
+// console.log(queue_LinkedList.dequeue());
+// console.log(queue_LinkedList.dequeue());
+// console.log(queue_LinkedList.dequeue());
+
+// const queue_Stack = new Queue_Stack();
+// console.log(queue_Stack.peek());
+// console.log(queue_Stack.enqueue("Joy"));
+// console.log(queue_Stack.enqueue("Matt"));
+// console.log(queue_Stack.enqueue("Pavel"));
+// console.log(queue_Stack.peek());
+// console.log(queue_Stack.dequeue());
+// console.log(queue_Stack.dequeue());
+// console.log(queue_Stack.dequeue());
+// console.log(queue_Stack.peek());
