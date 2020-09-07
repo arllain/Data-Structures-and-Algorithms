@@ -40,6 +40,15 @@ class MySinglyLinkedList {
     return this.printList();
   }
 
+  // removing a node in the index provided
+  remove(index) {
+    const leader = this.traverseToIndex(index - 1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
+
   // traversing the linked list
   traverseToIndex(index) {
     let counter = 0;
