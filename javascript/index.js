@@ -103,7 +103,8 @@ binarySearchTree.insert(20);
 binarySearchTree.insert(170);
 binarySearchTree.insert(15);
 binarySearchTree.insert(1);
-console.log(JSON.stringify(traverse(binarySearchTree.root)));
+console.log(binarySearchTree.lookup(9));
+// console.log(JSON.stringify(traverse(binarySearchTree.root)));
 
 function traverse(node) {
   const tree = { value: node.value };
