@@ -8,7 +8,8 @@
 //import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
 //import Queue_LinkedList from "./data_structures/Queue/using_linkedlist/Queue.js";
 //import Queue_Stack from "./data_structures/Queue/using_stack/Queue.js";
-import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js";
+//import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js"
+import Graph from "./data_structures/Graph/Graph.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -95,21 +96,40 @@ import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySea
 // console.log(queue_Stack.dequeue());
 // console.log(queue_Stack.peek());
 
-const binarySearchTree = new BinarySearchTree();
-binarySearchTree.insert(9);
-binarySearchTree.insert(4);
-binarySearchTree.insert(6);
-binarySearchTree.insert(20);
-binarySearchTree.insert(170);
-binarySearchTree.insert(15);
-binarySearchTree.insert(1);
-console.log(JSON.stringify(binarySearchTree.lookup(9)));
-binarySearchTree.remove(170);
-console.log(JSON.stringify(traverse(binarySearchTree.root)));
+// const binarySearchTree = new BinarySearchTree();
+// binarySearchTree.insert(9);
+// binarySearchTree.insert(4);
+// binarySearchTree.insert(6);
+// binarySearchTree.insert(20);
+// binarySearchTree.insert(170);
+// binarySearchTree.insert(15);
+// binarySearchTree.insert(1);
+// console.log(JSON.stringify(binarySearchTree.lookup(9)));
+// binarySearchTree.remove(170);
+// console.log(JSON.stringify(traverse(binarySearchTree.root)));
 
-function traverse(node) {
-  const tree = { value: node.value };
-  tree.left = node.left === null ? null : traverse(node.left);
-  tree.right = node.right === null ? null : traverse(node.right);
-  return tree;
-}
+// function traverse(node) {
+//   const tree = { value: node.value };
+//   tree.left = node.left === null ? null : traverse(node.left);
+//   tree.right = node.right === null ? null : traverse(node.right);
+//   return tree;
+// }
+
+const myGraph = new Graph();
+myGraph.addVertex("0");
+myGraph.addVertex("1");
+myGraph.addVertex("2");
+myGraph.addVertex("3");
+myGraph.addVertex("4");
+myGraph.addVertex("5");
+myGraph.addVertex("6");
+myGraph.addEdge("3", "1");
+myGraph.addEdge("3", "4");
+myGraph.addEdge("4", "2");
+myGraph.addEdge("4", "5");
+myGraph.addEdge("1", "2");
+myGraph.addEdge("1", "0");
+myGraph.addEdge("0", "2");
+myGraph.addEdge("5", "6");
+
+console.log(myGraph);
