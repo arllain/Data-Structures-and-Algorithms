@@ -10,7 +10,8 @@
 //import Queue_Stack from "./data_structures/Queue/using_stack/Queue.js";
 //import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js"
 //import Graph from "./data_structures/Graph/Graph.js";
-import Factorial from "./algorithms/recursion/Factorial.js";
+//import Factorial from "./algorithms/recursion/Factorial.js";
+import Fibonacci from "./algorithms/recursion/Fibonacci.js";
 // const myArray = new MyArray();
 // myArray.push("hi");
 // myArray.push("you");
@@ -134,8 +135,14 @@ import Factorial from "./algorithms/recursion/Factorial.js";
 
 // console.log(myGraph);
 
-const factorial = new Factorial();
-let answer = factorial.findFactorialInteractive(5);
+// const factorial = new Factorial();
+// let answer = factorial.findFactorialInteractive(5);
+// console.log(answer);
+// answer = factorial.findFactorialRecursive(5);
+// console.log(answer);
+
+const fibonacci = new Fibonacci();
+let answer = fibonacci.fibonacciRecursive(43);
 console.log(answer);
-answer = factorial.findFactorialRecursive(5);
+answer = fibonacci.fiibonacciInteractive(43);
 console.log(answer);
