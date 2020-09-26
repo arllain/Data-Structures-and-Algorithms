@@ -9,8 +9,8 @@
 //import Queue_LinkedList from "./data_structures/Queue/using_linkedlist/Queue.js";
 //import Queue_Stack from "./data_structures/Queue/using_stack/Queue.js";
 //import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js"
-import Graph from "./data_structures/Graph/Graph.js";
-
+//import Graph from "./data_structures/Graph/Graph.js";
+import Factorial from "./algorithms/recursion/Factorial.js";
 // const myArray = new MyArray();
 // myArray.push("hi");
 // myArray.push("you");
@@ -115,21 +115,27 @@ import Graph from "./data_structures/Graph/Graph.js";
 //   return tree;
 // }
 
-const myGraph = new Graph();
-myGraph.addVertex("0");
-myGraph.addVertex("1");
-myGraph.addVertex("2");
-myGraph.addVertex("3");
-myGraph.addVertex("4");
-myGraph.addVertex("5");
-myGraph.addVertex("6");
-myGraph.addEdge("3", "1");
-myGraph.addEdge("3", "4");
-myGraph.addEdge("4", "2");
-myGraph.addEdge("4", "5");
-myGraph.addEdge("1", "2");
-myGraph.addEdge("1", "0");
-myGraph.addEdge("0", "2");
-myGraph.addEdge("5", "6");
+// const myGraph = new Graph();
+// myGraph.addVertex("0");
+// myGraph.addVertex("1");
+// myGraph.addVertex("2");
+// myGraph.addVertex("3");
+// myGraph.addVertex("4");
+// myGraph.addVertex("5");
+// myGraph.addVertex("6");
+// myGraph.addEdge("3", "1");
+// myGraph.addEdge("3", "4");
+// myGraph.addEdge("4", "2");
+// myGraph.addEdge("4", "5");
+// myGraph.addEdge("1", "2");
+// myGraph.addEdge("1", "0");
+// myGraph.addEdge("0", "2");
+// myGraph.addEdge("5", "6");
 
-console.log(myGraph);
+// console.log(myGraph);
+
+const factorial = new Factorial();
+let answer = factorial.findFactorialInteractive(5);
+console.log(answer);
+answer = factorial.findFactorialRecursive(5);
+console.log(answer);
