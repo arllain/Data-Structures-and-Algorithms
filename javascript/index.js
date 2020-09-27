@@ -12,7 +12,7 @@
 //import Graph from "./data_structures/Graph/Graph.js";
 //import Factorial from "./algorithms/recursion/Factorial.js";
 //import Fibonacci from "./algorithms/recursion/Fibonacci.js";
-import BubbleSort from "./algorithms/BubbleSort/BubbleSort.js";
+import BubbleSort from "./algorithms/Sorting/BubbleSort.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
