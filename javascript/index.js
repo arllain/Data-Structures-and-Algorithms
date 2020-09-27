@@ -14,7 +14,8 @@
 //import Fibonacci from "./algorithms/recursion/Fibonacci.js";
 //import BubbleSort from "./algorithms/Sorting/BubbleSort.js";
 //import SelectionSort from "./algorithms/Sorting/SelectionSort.js";
-import InsertionSort from "./algorithms/Sorting/InsertionSort.js";
+//import InsertionSort from "./algorithms/Sorting/InsertionSort.js";
+import MergeSort from "./algorithms/Sorting/MergeSort.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -157,5 +158,5 @@ const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // const selectionSort = new SelectionSort();
 // console.log(selectionSort.sort(numbers));
 
-const insertionSort = new InsertionSort();
-console.log(insertionSort.sort(numbers));
+const mergeSort = new MergeSort();
+console.log(mergeSort.sort(numbers));
