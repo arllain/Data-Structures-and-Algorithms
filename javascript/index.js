@@ -15,7 +15,8 @@
 //import BubbleSort from "./algorithms/Sorting/BubbleSort.js";
 //import SelectionSort from "./algorithms/Sorting/SelectionSort.js";
 //import InsertionSort from "./algorithms/Sorting/InsertionSort.js";
-import MergeSort from "./algorithms/Sorting/MergeSort.js";
+//import MergeSort from "./algorithms/Sorting/MergeSort.js";
+import QuickSort from "./algorithms/Sorting/QuickSort.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -157,6 +158,8 @@ const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // console.log(bubbleSort.sort(numbers));
 // const selectionSort = new SelectionSort();
 // console.log(selectionSort.sort(numbers));
+// const mergeSort = new MergeSort();
+// console.log(mergeSort.sort(numbers));
 
-const mergeSort = new MergeSort();
-console.log(mergeSort.sort(numbers));
+const quickSort = new QuickSort();
+console.log(quickSort.sort(numbers, 0, numbers.length - 1));
