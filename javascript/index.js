@@ -11,7 +11,13 @@
 //import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js"
 //import Graph from "./data_structures/Graph/Graph.js";
 //import Factorial from "./algorithms/recursion/Factorial.js";
-import Fibonacci from "./algorithms/recursion/Fibonacci.js";
+//import Fibonacci from "./algorithms/recursion/Fibonacci.js";
+//import BubbleSort from "./algorithms/Sorting/BubbleSort.js";
+//import SelectionSort from "./algorithms/Sorting/SelectionSort.js";
+//import InsertionSort from "./algorithms/Sorting/InsertionSort.js";
+//import MergeSort from "./algorithms/Sorting/MergeSort.js";
+import QuickSort from "./algorithms/Sorting/QuickSort.js";
+
 // const myArray = new MyArray();
 // myArray.push("hi");
 // myArray.push("you");
@@ -141,8 +147,19 @@ import Fibonacci from "./algorithms/recursion/Fibonacci.js";
 // answer = factorial.findFactorialRecursive(5);
 // console.log(answer);
 
-const fibonacci = new Fibonacci();
-let answer = fibonacci.fibonacciRecursive(43);
-console.log(answer);
-answer = fibonacci.fiibonacciInteractive(43);
-console.log(answer);
+// const fibonacci = new Fibonacci();
+// let answer = fibonacci.fibonacciRecursive(43);
+// console.log(answer);
+// answer = fibonacci.fiibonacciInteractive(43);
+// console.log(answer);
+
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+// const bubbleSort = new BubbleSort();
+// console.log(bubbleSort.sort(numbers));
+// const selectionSort = new SelectionSort();
+// console.log(selectionSort.sort(numbers));
+// const mergeSort = new MergeSort();
+// console.log(mergeSort.sort(numbers));
+
+const quickSort = new QuickSort();
+console.log(quickSort.sort(numbers, 0, numbers.length - 1));
