@@ -8,7 +8,7 @@
 //import Stack_Array from "./data_structures/Stack/using_array/Stack.js";
 //import Queue_LinkedList from "./data_structures/Queue/using_linkedlist/Queue.js";
 //import Queue_Stack from "./data_structures/Queue/using_stack/Queue.js";
-//import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js"
+import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySearchTree.js";
 //import Graph from "./data_structures/Graph/Graph.js";
 //import Factorial from "./algorithms/recursion/Factorial.js";
 //import Fibonacci from "./algorithms/recursion/Fibonacci.js";
@@ -16,7 +16,7 @@
 //import SelectionSort from "./algorithms/Sorting/SelectionSort.js";
 //import InsertionSort from "./algorithms/Sorting/InsertionSort.js";
 //import MergeSort from "./algorithms/Sorting/MergeSort.js";
-import QuickSort from "./algorithms/Sorting/QuickSort.js";
+//import QuickSort from "./algorithms/Sorting/QuickSort.js";
 
 // const myArray = new MyArray();
 // myArray.push("hi");
@@ -103,17 +103,18 @@ import QuickSort from "./algorithms/Sorting/QuickSort.js";
 // console.log(queue_Stack.dequeue());
 // console.log(queue_Stack.peek());
 
-// const binarySearchTree = new BinarySearchTree();
-// binarySearchTree.insert(9);
-// binarySearchTree.insert(4);
-// binarySearchTree.insert(6);
-// binarySearchTree.insert(20);
-// binarySearchTree.insert(170);
-// binarySearchTree.insert(15);
-// binarySearchTree.insert(1);
-// console.log(JSON.stringify(binarySearchTree.lookup(9)));
-// binarySearchTree.remove(170);
-// console.log(JSON.stringify(traverse(binarySearchTree.root)));
+const binarySearchTree = new BinarySearchTree();
+binarySearchTree.insert(9);
+binarySearchTree.insert(4);
+binarySearchTree.insert(6);
+binarySearchTree.insert(20);
+binarySearchTree.insert(170);
+binarySearchTree.insert(15);
+binarySearchTree.insert(1);
+console.log(JSON.stringify(binarySearchTree.lookup(9)));
+//binarySearchTree.remove(170);
+//console.log(JSON.stringify(traverse(binarySearchTree.root)));
+console.log(JSON.stringify(binarySearchTree.breadthFirstSearch()));
 
 // function traverse(node) {
 //   const tree = { value: node.value };
@@ -153,7 +154,7 @@ import QuickSort from "./algorithms/Sorting/QuickSort.js";
 // answer = fibonacci.fiibonacciInteractive(43);
 // console.log(answer);
 
-const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+// const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // const bubbleSort = new BubbleSort();
 // console.log(bubbleSort.sort(numbers));
 // const selectionSort = new SelectionSort();
@@ -161,5 +162,5 @@ const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // const mergeSort = new MergeSort();
 // console.log(mergeSort.sort(numbers));
 
-const quickSort = new QuickSort();
-console.log(quickSort.sort(numbers, 0, numbers.length - 1));
+// const quickSort = new QuickSort();
+// console.log(quickSort.sort(numbers, 0, numbers.length - 1));
