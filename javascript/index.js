@@ -115,6 +115,15 @@ console.log(JSON.stringify(binarySearchTree.lookup(9)));
 //binarySearchTree.remove(170);
 //console.log(JSON.stringify(traverse(binarySearchTree.root)));
 console.log(JSON.stringify(binarySearchTree.breadthFirstSearch()));
+console.log(
+    "BFS Recursive =>  " +
+        JSON.stringify(
+            binarySearchTree.breadthFirstSearchRecursive(
+                [binarySearchTree.root],
+                []
+            )
+        )
+);
 
 // function traverse(node) {
 //   const tree = { value: node.value };
