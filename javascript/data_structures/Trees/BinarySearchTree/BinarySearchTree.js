@@ -168,6 +168,66 @@ class BinarySearchTree {
         }
         return this.breadthFirstSearchRecursive(queue, list);
     }
+
+    /*
+                      9
+                4         20
+             1    6    15  170
+
+             InOrder     - [1, 4,  6, 9, 15, 20, 170]
+             PreOrder   - [9, 4 , 1, 6, 20, 15, 170]
+             PostOrder - [1, 6, 4, 15, 170, 20, 9 ]
+    */
+    depthFirstSearchInOrder() {
+        return this.traverseInOrder(this.root, []);
+    }
+
+    depthFirstSearchPreOrder() {
+        return this.traversePreOrder(this.root, []);
+    }
+
+    depthFirstSearchPostOrder() {
+        return this.traversePostOrder(this.root, []);
+    }
+
+    traverseInOrder(node, list) {
+        if (node.left) {
+            this.traverseInOrder(node.left, list);
+        }
+
+        list.push(node.value);
+
+        if (node.right) {
+            this.traverseInOrder(node.right, list);
+        }
+        return list;
+    }
+
+    traversePreOrder(node, list) {
+        list.push(node.value);
+
+        if (node.left) {
+            this.traversePreOrder(node.left, list);
+        }
+
+        if (node.right) {
+            this.traversePreOrder(node.right, list);
+        }
+        return list;
+    }
+
+    traversePostOrder(node, list) {
+        if (node.left) {
+            this.traversePostOrder(node.left, list);
+        }
+
+        if (node.right) {
+            this.traversePostOrder(node.right, list);
+        }
+
+        list.push(node.value);
+        return list;
+    }
 }
 
 export default BinarySearchTree;

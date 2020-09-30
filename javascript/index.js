@@ -103,28 +103,6 @@ import BinarySearchTree from "./data_structures/Trees/BinarySearchTree/BinarySea
 // console.log(queue_Stack.dequeue());
 // console.log(queue_Stack.peek());
 
-const binarySearchTree = new BinarySearchTree();
-binarySearchTree.insert(9);
-binarySearchTree.insert(4);
-binarySearchTree.insert(6);
-binarySearchTree.insert(20);
-binarySearchTree.insert(170);
-binarySearchTree.insert(15);
-binarySearchTree.insert(1);
-console.log(JSON.stringify(binarySearchTree.lookup(9)));
-//binarySearchTree.remove(170);
-//console.log(JSON.stringify(traverse(binarySearchTree.root)));
-console.log(JSON.stringify(binarySearchTree.breadthFirstSearch()));
-console.log(
-    "BFS Recursive =>  " +
-        JSON.stringify(
-            binarySearchTree.breadthFirstSearchRecursive(
-                [binarySearchTree.root],
-                []
-            )
-        )
-);
-
 // function traverse(node) {
 //   const tree = { value: node.value };
 //   tree.left = node.left === null ? null : traverse(node.left);
@@ -173,3 +151,38 @@ console.log(
 
 // const quickSort = new QuickSort();
 // console.log(quickSort.sort(numbers, 0, numbers.length - 1));
+
+const binarySearchTree = new BinarySearchTree();
+binarySearchTree.insert(9);
+binarySearchTree.insert(4);
+binarySearchTree.insert(6);
+binarySearchTree.insert(20);
+binarySearchTree.insert(170);
+binarySearchTree.insert(15);
+binarySearchTree.insert(1);
+console.log(JSON.stringify(binarySearchTree.lookup(9)));
+//binarySearchTree.remove(170);
+//console.log(JSON.stringify(traverse(binarySearchTree.root)));
+// console.log(JSON.stringify(binarySearchTree.breadthFirstSearch()));
+// console.log(
+//     "BFS Recursive =>  " +
+//         JSON.stringify(
+//             binarySearchTree.breadthFirstSearchRecursive(
+//                 [binarySearchTree.root],
+//                 []
+//             )
+//         )
+// );
+
+console.log(
+    "depthFirstSearchInOrder => " +
+        JSON.stringify(binarySearchTree.depthFirstSearchInOrder())
+);
+console.log(
+    "depthFirstSearchPreOrder => " +
+        JSON.stringify(binarySearchTree.depthFirstSearchPreOrder())
+);
+console.log(
+    "depthFirstSearchPostOrder => " +
+        JSON.stringify(binarySearchTree.depthFirstSearchPostOrder())
+);
